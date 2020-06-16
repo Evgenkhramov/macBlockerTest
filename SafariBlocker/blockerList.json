@@ -9,6 +9,14 @@
     },
     {
         "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": "www.infoq.com"
+        }
+    },
+    {
+        "action": {
             "type": "css-display-none",
             "selector": "#home-icon"
         },

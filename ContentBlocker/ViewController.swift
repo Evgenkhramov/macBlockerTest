@@ -14,6 +14,30 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    /*fileprivate func saveRuleFile() {
+
+        let ruleList = [["trigger":["url-filter": ".*"],"action":["type": "block"]]]
+
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = .prettyPrinted
+        if let encoded = try? encoder.encode(ruleList) {
+
+            let sharedContainerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.****.***")
+            print("sharedContainerURL = \(String(describing: sharedContainerURL))")
+
+            if let json = String(data: encoded, encoding: .utf8) {
+                print(json)
+            }
+
+            if let destinationURL = sharedContainerURL?.appendingPathComponent("Rules.json") {
+                do {
+                    try  encoded.write(to: destinationURL)
+                } catch {
+                    print (error)
+                }
+            }
+        }
+    }*/
 
 
 }
